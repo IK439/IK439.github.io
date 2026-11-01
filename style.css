@@ -1,0 +1,69 @@
+:root{color-scheme:light;--bg:#faf9f6;--paper:#fff;--ink:#242520;--muted:#72736c;--line:#e8e6df;--accent:#526d53}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1150px;margin:auto;padding:38px 32px 36px}header{padding:100px 0 85px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;letter-spacing:.24em;font-weight:750;text-transform:uppercase;color:var(--accent)}.dot{display:inline-block;width:7px;height:7px;background:#8eaa7e;border-radius:50%;margin-right:11px;vertical-align:2px}h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(3.6rem,8.6vw,7.8rem);line-height:.98;letter-spacing:-.065em;margin:27px 0 30px}h1 em{font-weight:400;font-style:italic;color:#839480}.intro{max-width:590px;font-size:1.05rem;line-height:1.8;color:#62645e}.metrics{display:flex;gap:13px;margin-top:31px;font-size:12px;letter-spacing:.06em;color:#64695f}.sep{color:#b8bcb3}section{margin-top:57px}.section-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:22px;margin-bottom:28px}h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:2rem;letter-spacing:-.035em;margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap}button{border:1px solid #dedfd6;border-radius:5px;padding:10px 15px;background:transparent;color:#64665f;cursor:pointer;font:inherit;font-size:12px;transition:background .15s,color .15s}button:hover{background:#eeefe9}button[aria-pressed=true]{background:#374d3b;color:white;border-color:#374d3b}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}.cert{background:var(--paper);border:1px solid var(--line);border-radius:5px;overflow:hidden;transition:transform .2s,box-shadow .2s}.cert:hover{transform:translateY(-3px);box-shadow:0 14px 35px #2425200b}.art{height:310px;display:flex;align-items:center;justify-content:center;background:#f2f1ec;padding:35px}.art img{max-width:100%;width:100%;height:100%;object-fit:contain}.cert-body{padding:27px 29px 30px}.provider{font-size:10px;text-transform:uppercase;letter-spacing:.17em;color:#668269;font-weight:800}.cert h3{font-family:Georgia,"Times New Roman",serif;font-size:1.6rem;font-weight:400;letter-spacing:-.035em;margin:10px 0 8px}.meta{font-size:12px;color:#868780;margin:0 0 21px}.verify{display:inline-flex;align-items:center;color:#36543c;text-decoration:none;font-size:12px;font-weight:750;border-bottom:1px solid #92a58f;padding-bottom:4px}.verify:hover{color:#172c1c;border-color:#172c1c}.verify:focus-visible,button:focus-visible{outline:3px solid #92a58f;outline-offset:4px}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:85px;color:#92938b;font-size:12px}@media(max-width:700px){.wrap{padding:24px 18px}header{padding:65px 0 55px}h1{font-size:clamp(3.3rem,13vw,5rem)}.gallery{grid-template-columns:1fr}.art{height:265px}.cert-body{padding:23px}section{margin-top:42px}}
+
+/* Personalised name treatment, retaining the original editorial layout. */
+h1{font-size:clamp(3.2rem,8vw,7.1rem);letter-spacing:-.055em}
+h1 em{white-space:nowrap}
+@media(max-width:700px){h1{font-size:clamp(2.9rem,11vw,5rem)}h1 em{white-space:normal}}
+
+/* Refinement: use the available viewport width and reduce excess whitespace. */
+.wrap{max-width:1360px;padding:28px clamp(20px,4vw,60px) 32px}
+header{padding:48px 0 42px}
+h1{font-size:clamp(3.2rem,7vw,6.5rem);margin:17px 0 20px}
+.intro{max-width:850px;line-height:1.65;margin:0}
+.metrics{margin-top:18px}
+section{margin-top:34px}
+.section-head{margin-bottom:20px;gap:16px}
+.gallery{gap:20px}
+.art{height:370px;padding:12px;background:#f4f3ef}
+.art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.cert-body{padding:19px 24px 23px}
+.cert h3{margin:6px 0 5px;font-size:1.45rem}
+.meta{margin:0 0 14px}
+footer{margin-top:50px}
+@media(min-width:1100px){.art{height:410px}}
+@media(max-width:700px){.wrap{padding:20px 16px 28px}header{padding:40px 0 32px}h1{font-size:clamp(2.9rem,11vw,5rem)}.gallery{grid-template-columns:1fr;gap:16px}.art{height:auto;aspect-ratio:1.25;padding:10px}.cert-body{padding:18px 20px}section{margin-top:30px}}
+
+/* Full certificate artwork without cropping; portrait certificates keep their full aspect ratio. */
+.art{height:auto;aspect-ratio:1.35;padding:12px}
+.art img{width:100%;height:100%;object-fit:contain}
+.no-link{font-size:12px;color:#85877f}
+@media(max-width:700px){.art{aspect-ratio:1.18;padding:8px}}
+
+/* Usability and security refinements, preserving the original editorial design. */
+.eyebrow{font-size:clamp(1rem,1.8vw,1.4rem);letter-spacing:.065em;text-transform:none;font-weight:600;line-height:1.4}
+.preview-trigger{display:flex;width:100%;border:0;border-radius:0;cursor:zoom-in;padding:12px;background:#f4f3ef;aspect-ratio:1.35;transition:background .15s}
+.preview-trigger:hover{background:#eaece5}
+.preview-trigger img{width:100%;height:100%;object-fit:contain}
+.preview-trigger:focus-visible,.preview-close:focus-visible{outline:3px solid #526d53;outline-offset:-4px}
+#preview-dialog{border:1px solid #dedfd6;border-radius:8px;background:#faf9f6;color:#242520;max-width:min(95vw,1200px);max-height:94vh;width:100%;padding:18px 22px 24px;box-shadow:0 22px 80px #151a1590}
+#preview-dialog::backdrop{background:#141914c9}
+.preview-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:12px}
+.preview-top h2{font-size:clamp(1.15rem,2vw,1.7rem)}
+.preview-close{font-size:1.2rem;flex-shrink:0}
+.preview-media{display:flex;justify-content:center;align-items:center;max-height:calc(94vh - 155px);overflow:auto}
+.preview-media img{display:block;max-width:100%;max-height:calc(94vh - 160px);width:auto;height:auto;object-fit:contain}
+#preview-verify{margin-top:14px}
+footer{line-height:1.8}footer strong{color:#62645e}
+@media(max-width:700px){.eyebrow{font-size:1rem}.preview-trigger{aspect-ratio:1.18;padding:8px}#preview-dialog{padding:12px}.preview-media img{max-height:calc(94vh - 145px)}}
+
+/* Ensure hidden verification actions stay hidden even when styled as inline-flex. */
+[hidden], .verify[hidden] { display: none !important; }
+/* Align the accent dot with the first line of the eyebrow text. */
+.eyebrow { display:flex; align-items:baseline; gap:12px; }
+.eyebrow .dot { display:block; flex:none; width:8px; height:8px; margin:0; align-self:baseline; transform:translateY(-2px); }
+/* Separate copyright and issuer disclaimer into balanced readable lines. */
+.site-footer { display:flex; flex-direction:column; gap:9px; max-width:100%; line-height:1.6; }
+.site-footer p { margin:0; }
+.footer-owner { color:#4b5149; font-size:13px; font-weight:650; }
+.footer-note { color:#777970; font-size:12px; max-width:880px; text-wrap:pretty; }
+
+/* Final alignment: dot is centred against the first line, even when the title wraps. */
+.eyebrow { display:flex; align-items:flex-start; gap:12px; }
+.eyebrow .dot { display:block; flex:0 0 8px; margin:0; align-self:auto; transform:none; margin-top:.58em; }
+/* Native hidden state must override the verification link display styling. */
+#preview-verify[hidden] { display:none !important; }
+
+/* Centre footer paragraphs without changing the existing layout. */
+.site-footer { align-items:center; text-align:center; width:100%; }
+.site-footer p { width:100%; margin:0 auto; text-align:center; }
+.site-footer .footer-note { max-width:880px; }

@@ -1,0 +1,11 @@
+# macOS metadata files
+.DS_Store
+**/.DS_Store
+
+# macOS temporary files
+.AppleDouble
+.LSOverride
+._*
+
+# VS Code local settings
+.vscode/

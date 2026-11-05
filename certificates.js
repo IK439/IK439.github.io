@@ -1,6 +1,15 @@
 // Credentials sorted newest first. Public assets contain no original PDF files.
 const certificates = [
   {
+  "title": "Claude Code 101",
+  "provider": "Claude Academy",
+  "image": "assets/claude-code-101.png",
+  "date": "5 November 2026",
+  "verify": "https://academy.claude.com/verify/eb49f14a1c9cfe05a96dcd3389655692",
+  "type": "Course-completion badge",
+  "iso": "2026-11-05"
+},
+  {
   "title": "Claude 101",
   "provider": "Claude Academy",
   "image": "assets/claude-101.png",

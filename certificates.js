@@ -1,6 +1,15 @@
 // Credentials sorted newest first. Public assets contain no original PDF files.
 const certificates = [
   {
+  "title": "Building with the Claude API",
+  "provider": "Claude Academy",
+  "image": "assets/claude-building-with-api.png",
+  "date": "12 November 2026",
+  "verify": "https://academy.claude.com/verify/6ef095885bc1be51a544af6a726b16a3",
+  "type": "Course-completion badge",
+  "iso": "2026-11-12"
+},
+  {
   "title": "Build Agentic Systems",
   "provider": "OpenAI Academy",
   "image": "assets/openai-build-agentic-systems.png",
